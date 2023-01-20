@@ -14,7 +14,11 @@
                         {{ $header }}
                     </h2>
 
-                    <button class="rounded-lg bg-green-500 p-1 hover:bg-green-700 float-right">Add Users</button>
+                    <a href="{{ url('/users/add') }}">
+                        <button class="rounded-lg bg-green-500 p-1 hover:bg-green-700 float-right">
+                            Add Users
+                        </button>
+                    </a>
 
                     <table class="table-auto w-full m-5">
                         <thead>
