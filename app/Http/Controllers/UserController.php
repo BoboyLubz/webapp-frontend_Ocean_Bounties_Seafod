@@ -52,7 +52,7 @@ class UserController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        session()->flash('status', 'Added User successful!');
+        session()->flash('status', 'Added User successfully!');
 
         //Redirect to the list of users
         return redirect('/users');
@@ -66,7 +66,12 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = User::find($id);
+
+        return view('users.form', [
+            'header' => 'Update User',
+            'user'   => $user
+        ]);
     }
 
     /**
@@ -78,7 +83,19 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+         //Validation
+         $request->validate([
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+        ]);
+
+        $user = User::find($id);
+
+        $user->update($request->all());
+
+        session()->flash('status', 'Updated User successfully!');
+
+        return redirect('/users/update/' . $user->id); /**return redirect('/users/update' . $user->id); **/
     }
 
     /**
