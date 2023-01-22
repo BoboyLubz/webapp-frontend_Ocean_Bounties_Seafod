@@ -4056,7 +4056,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #64a19d;
+  color: *#64a19d;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -4142,6 +4142,7 @@ textarea.form-control-lg {
 }
 
 .navbar {
+  
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -4149,6 +4150,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4169,6 +4171,7 @@ textarea.form-control-lg {
   font-size: 1.25rem;
   text-decoration: none;
   white-space: nowrap;
+  /*border-radius: 50%;*/
 }
 .navbar-nav {
   display: flex;
@@ -11474,7 +11477,7 @@ body {
 
 #mainNav {
   min-height: 3.5rem;
-  background-color: #fff;
+  background-color: #0080ff; 
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -11546,6 +11549,10 @@ body {
   }
 }
 
+#logo{
+  border-radius: 50%;
+}
+
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
   padding: 1.25rem 2rem;
@@ -11562,7 +11569,7 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background: url("../assets/images/bg-head.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11638,10 +11645,14 @@ body {
     width: 30%;
   }
 }
+#map{
+  height: 100%;
+  width: 100%;
+}
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/images/contact.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
