@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ $header }} <!--{/{ __('Add Users') }}-->
+            {{ $header }}
         </h2>
     </x-slot>
 
@@ -39,6 +39,7 @@
                             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="( url()->current() == url('/users/add') ) ? old('email'):$user->email" required />
                             <x-input-error :messages="$errors->get('email')" class="mt-2" />
                         </div>
+                       
 
                         @if ( url()->current() == url('/users/add') ) 
                             <!-- Password -->
@@ -55,6 +56,22 @@
                             </div>
                         @endif
                         
+                         <!-- User type -->
+                        <div class="block mt-4">  
+                            <div class="mt-4"> User Type : 
+                                <div class="flex">
+                                    <div class="flex items-center mr-4">
+                                        <input id="inline-radio" type="radio" value="admin" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="inline-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Admin</label>
+                                    </div>
+                                    <div class="flex items-center mr-4">
+                                        <input id="inline-2-radio" type="radio" value="clerk" name="inline-radio-group" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                                        <label for="inline-2-radio" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Clerk</label>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+            
 
                         <div class="flex items-center justify-end mt-4 ">
                             <x-primary-button class="ml-4">
@@ -65,5 +82,8 @@
                 </div>
             </div>
         </div>
+        
+                
+        
     </div>
 </x-app-layout>

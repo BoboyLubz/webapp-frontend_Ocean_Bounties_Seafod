@@ -16,6 +16,68 @@
             </div>
         -->
         </header>
+        <!--Announcement-->
+        
+        <section class="announcement-section" id="announcement">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5">
+                    <!--Announcement Carousel -->
+                    
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="assets/images/menus.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/services.jpg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/shrimp-tempura.jpg" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div> 
+                    <!--
+                    <div class="multi-carousel" data-mdb-interval="3000" data-mdb-items="5">
+                        <div class="d-flex justify-content-center m-2 mb-3">
+                            <button class="carousel-control-prev btn btn-pink btn-floating mx-3" type="button" tabindex="0" data-mdb-slide="prev">
+                                <i class="fas fa-angle-left fa-lg"></i>
+                            </button>
+                            <button class="carousel-control-next btn btn-pink btn-floating mx-3" type="button" tabindex="0" data-mdb-slide="next">
+                                <i class="fas fa-angle-right fa-lg"></i>
+                            </button>
+                        </div>
+                        <div class="multi-carousel-inner">
+                            <div class="multi-carousel-item">
+                                <div class="card m-2">
+                                    <img class="card-img-top" src="assets/images/menus.jpg" alt="Card image cap" />
+                                    <div class="card-body">
+                                        <h5 class="card-titles">Moda</h5>
+                                        <p class="card-texts">Plan B</p>
+                                        <ul class="list-unstyled list-inline my-2">
+                                            <li class="list-inline-items mx-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-items mx-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-items mx-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-items mx-0"><i class="fas fa-star"></i></li>
+                                            <li class="list-inline-items mx-0"><i class="fas fa-star-half-alt"></i></li>
+                                        </ul>
+                                        <p class="price mb-0">9,99 $</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            -->
+                </div>
+            </div>
+        </section>
+        <!--End of Announcement "--> 
         <!-- About-->
         <section class="about-section text-center" id="about">
             <div class="container px-4 px-lg-5">
@@ -78,74 +140,7 @@
                 </div>
             </div>
         </section>
-        <!--Announcement-->
-        <section class="announcement-section" id="announcement">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <!--Announcement Carousel -->
         
-                    <div id="portfolio">
-                    <!-- Slideshow container -->
-                        <div class="slideshow-container">
-
-                            <!-- Full-width images with number and caption text -->
-                            <div class="mySlides">
-                                <div class="numbertext">1 / 3</div>
-                                    <img src="assets/images/menus.jpg" style="width:80%">
-                                <div class="text"></div>
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">2 / 3</div>
-                                    <img src="assets/images/lubster.jpg" style="width:80%">
-                                <div class="text"></div>
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">3 / 3</div>
-                                    <img src="assets/images/shrimp-tempura.jpg" style="width:80%">
-                                <div class="text"></div>
-                            </div>
-
-                            <!-- Next and previous buttons -->
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                        </div>
-                        <br>
-
-                        <!-- The dots/circles -->
-                        <div style="text-align:center">
-                            <span class="dot" onclick="currentSlide(1)"></span>
-                            <span class="dot" onclick="currentSlide(2)"></span>
-                            <span class="dot" onclick="currentSlide(3)"></span>
-                        </div>
-                    </div> 
-                    <script>
-                        let slideIndex = 0;
-                        showSlides();
-
-                        function showSlides() {
-                            let i;
-                            let slides = document.getElementsByClassName("mySlides");
-                            let dots = document.getElementsByClassName("dot");
-                            for (i = 0; i < slides.length; i++) {
-                                slides[i].style.display = "none";  
-                            }
-                            slideIndex++;
-                            if (slideIndex > slides.length) {slideIndex = 1}    
-                            for (i = 0; i < dots.length; i++) {
-                                dots[i].className = dots[i].className.replace(" active", "");
-                            }
-                            slides[slideIndex-1].style.display = "block";  
-                            dots[slideIndex-1].className += " active";
-                            setTimeout(showSlides, 2000); // Change image every 2 seconds
-                        }
-                    </script>
-        
-                </div>
-            </div>
-        </section>
-        <!--End of Announcement-->
         <!--Map-->
         <section class="map-section bg-info-subtle" id="map">
             <div class="container px-4 px-lg-5">
