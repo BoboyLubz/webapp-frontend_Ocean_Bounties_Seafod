@@ -22,19 +22,53 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
                     <!--Announcement Carousel -->
+                    <!--
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        
+                        <ol class="carousel-indicators">
+                            @/foreach ($announcements as $announcement)
+                                <li data-target="#carouselExampleIndicators" data-slide-to="{/{ $loop->index }}" class="{/{ $loop->first ? 'active' : '' }}"></li>
+                            @/endforeach
+                        </ol> 
+
+                        <div class="carousel-inner" role="listbox">
+                            @/foreach ($announcements as $announcement)
+                                <div class="carousel-item {/{ $loop->first ? 'active' : '' }}">
+                                    <img class="d-block img-fluid" src="{/{ $announcement->image }}" alt="{/{ $announcement->name }}">
+                                        <div class="carousel-caption d-none d-md-block">
+                                            <h3>{/{ $announcement->name}}</h3>
+                                            <h3>{/{ $announcement->price}}</h3>
+                                            <p>{/{ $announcement->description }}</p>
+                                        </div>
+                                </div>
+                            @/endforeach
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div> -->
                     
                     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        
                         <div class="carousel-inner">
                             <div class="carousel-item active">
+                                
                                 <img src="assets/images/menus.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
                                 <img src="assets/images/services.jpg" class="d-block w-100" alt="...">
-                            </div>
+                            </div> 
+                            
                             <div class="carousel-item">
                                 <img src="assets/images/shrimp-tempura.jpg" class="d-block w-100" alt="...">
-                            </div>
+                            </div> 
                         </div>
+                        
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Previous</span>
@@ -43,7 +77,8 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
-                    </div> 
+                    </div>
+                    
                     <!--
                     <div class="multi-carousel" data-mdb-interval="3000" data-mdb-items="5">
                         <div class="d-flex justify-content-center m-2 mb-3">

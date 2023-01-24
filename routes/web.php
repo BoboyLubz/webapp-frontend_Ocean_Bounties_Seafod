@@ -39,6 +39,10 @@ Route::get('/users/update/{id}', [UserController::class, 'show'])
         ->middleware(['auth', 'verified']);
 Route::post('/users/update/{id}', [UserController::class, 'update'])
         ->middleware(['auth', 'verified']);
+Route::delete('/users/delete/{id}', [UserController::class, 'destroy'])
+        ->middleware(['auth', 'verified']);       
+        
+
 
 
 
@@ -58,6 +62,8 @@ Route::get('/announcements/update/{id}', [AnnouncementController::class, 'show']
         ->middleware(['auth', 'verified']);
 Route::post('/announcements/update/{id}', [AnnouncementController::class, 'update'])
         ->middleware(['auth', 'verified']);
+Route::delete('/announcements/delete/{id}', [AnnouncementController::class, 'destroy'])
+        ->middleware(['auth', 'verified']);  
 
 
 Route::middleware('auth')->group(function () {
