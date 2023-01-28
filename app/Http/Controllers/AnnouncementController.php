@@ -13,15 +13,17 @@ class AnnouncementController extends Controller
      */
     public function index()
     {
+        /*return view('home', compact('announcements'));*/
         return view('announcements.announcements', [
             'header' => 'Announcement List',
             'announcements'   =>  Announcement::all()
         ]);
+
+ 
     }
 
     public function upload()
     {
-        
         return view('announcements.upload', [
             'header' => 'Add Announcement'
         ]);

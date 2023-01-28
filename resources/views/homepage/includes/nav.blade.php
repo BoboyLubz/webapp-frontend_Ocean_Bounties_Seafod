@@ -14,13 +14,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#announcement">Announcement</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link" href="#projects">Services</a></li>
-                <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
-                <li class="nav-item"><a class="nav-link" href="#signup">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu">Menus</a></li>
+                <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#map">Contact</a></li>
                 <li class="nav-item"><a class="nav-link  btn btn-primary" href="{{ url('/login') }}">Login</a></li>
-            </ul>
+            </ul> 
         </div>
     </div>
 </nav>

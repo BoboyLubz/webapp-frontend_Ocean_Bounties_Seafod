@@ -15,57 +15,19 @@
                 </div>
             </div>
         -->
-        </header>
-        <!--Announcement-->
-        
-        <section class="announcement-section" id="announcement">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <!--Announcement Carousel -->
-                    <!--
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        
-                        <ol class="carousel-indicators">
-                            @/foreach ($announcements as $announcement)
-                                <li data-target="#carouselExampleIndicators" data-slide-to="{/{ $loop->index }}" class="{/{ $loop->first ? 'active' : '' }}"></li>
-                            @/endforeach
-                        </ol> 
-
-                        <div class="carousel-inner" role="listbox">
-                            @/foreach ($announcements as $announcement)
-                                <div class="carousel-item {/{ $loop->first ? 'active' : '' }}">
-                                    <img class="d-block img-fluid" src="{/{ $announcement->image }}" alt="{/{ $announcement->name }}">
-                                        <div class="carousel-caption d-none d-md-block">
-                                            <h3>{/{ $announcement->name}}</h3>
-                                            <h3>{/{ $announcement->price}}</h3>
-                                            <p>{/{ $announcement->description }}</p>
-                                        </div>
-                                </div>
-                            @/endforeach
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div> -->
-                    
-                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                         
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 
-                                <img src="assets/images/menus.jpg" class="d-block w-100" alt="...">
+                                <img src="assets/images/contact.jpg" class="d-block w-100" alt="...">
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/images/services.jpg" class="d-block w-100" alt="...">
+                                <img src="assets/images/carousel1.jpg" class="d-block w-100" alt="...">
                             </div> 
                             
                             <div class="carousel-item">
-                                <img src="assets/images/shrimp-tempura.jpg" class="d-block w-100" alt="...">
+                                <img src="assets/images/carousel2.jpg" class="d-block w-100" alt="...">
                             </div> 
                         </div>
                         
@@ -77,45 +39,16 @@
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Next</span>
                         </button>
-                    </div>
-                    
-                    <!--
-                    <div class="multi-carousel" data-mdb-interval="3000" data-mdb-items="5">
-                        <div class="d-flex justify-content-center m-2 mb-3">
-                            <button class="carousel-control-prev btn btn-pink btn-floating mx-3" type="button" tabindex="0" data-mdb-slide="prev">
-                                <i class="fas fa-angle-left fa-lg"></i>
-                            </button>
-                            <button class="carousel-control-next btn btn-pink btn-floating mx-3" type="button" tabindex="0" data-mdb-slide="next">
-                                <i class="fas fa-angle-right fa-lg"></i>
-                            </button>
-                        </div>
-                        <div class="multi-carousel-inner">
-                            <div class="multi-carousel-item">
-                                <div class="card m-2">
-                                    <img class="card-img-top" src="assets/images/menus.jpg" alt="Card image cap" />
-                                    <div class="card-body">
-                                        <h5 class="card-titles">Moda</h5>
-                                        <p class="card-texts">Plan B</p>
-                                        <ul class="list-unstyled list-inline my-2">
-                                            <li class="list-inline-items mx-0"><i class="fas fa-star"></i></li>
-                                            <li class="list-inline-items mx-0"><i class="fas fa-star"></i></li>
-                                            <li class="list-inline-items mx-0"><i class="fas fa-star"></i></li>
-                                            <li class="list-inline-items mx-0"><i class="fas fa-star"></i></li>
-                                            <li class="list-inline-items mx-0"><i class="fas fa-star-half-alt"></i></li>
-                                        </ul>
-                                        <p class="price mb-0">9,99 $</p>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            -->
-                </div>
             </div>
-        </section>
-        <!--End of Announcement "--> 
+        </header>
+        <!--Announcement-->
+        
+        
         <!-- About-->
+        
         <section class="about-section text-center" id="about">
-            <div class="container px-4 px-lg-5">
+            <div class="container px-4 px-lg-5"> 
+            <!--
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="text-white mb-4">ABOUT US</h2>
@@ -127,138 +60,297 @@
                         </p>
                     </div>
                 </div>
-                <img class="img-fluid" src="assets/images/services.jpg" width="80%" />
-            </div>
-        </section>
-        <!-- Projects-->
+                <img class="img-fluid" src="assets/images/services.jpg" width="80%" />-->
+                
+                <div class="row gx-0 mb-4 mb-lg-5 justify-content-center">
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/services.jpg" alt="..." /></div>
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="featured-text text-center text-lg-left">
+                            <h4></h4>
+                            <p class="text-black-50 mb-0">
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section> 
+        <!-- About us-->
         <section class="projects-section bg-light" id="projects">
             <div class="container px-4 px-lg-5">
                 <!-- Featured Project Row-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/images/services.jpg" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>Shoreline</h4>
-                            <p class="text-black-50 mb-0">Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project One Row-->
-                <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-01.jpg" alt="..." /></div>
-                    <div class="col-lg-6">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-left">
-                                    <h4 class="text-white">Misty</h4>
-                                    <p class="mb-0 text-white-50">An example of where you can put an image of a project, or anything else, along with a description.</p>
-                                    <hr class="d-none d-lg-block mb-0 ms-0" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project Two Row-->
-                <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/demo-image-02.jpg" alt="..." /></div>
-                    <div class="col-lg-6 order-lg-first">
-                        <div class="bg-black text-center h-100 project">
-                            <div class="d-flex h-100">
-                                <div class="project-text w-100 my-auto text-center text-lg-right">
-                                    <h4 class="text-white">Mountains</h4>
-                                    <p class="mb-0 text-white-50">Another example of a project with its respective description. These sections work well responsively as well, try this theme on a small screen!</p>
-                                    <hr class="d-none d-lg-block mb-0 me-0" />
-                                </div>
-                            </div>
+                            <h4>ABOUT US</h4>
+                            <p class="text-black-50 mb-0">
+                                Ocean Bounties - Seafood Market and Restaurant is a paradisiacal and conductive marketplace restaurant which provides customers with nutritious, delicious and fresh varied seafoods.
+                                <a href="https://www.facebook.com/oceanbounties/">Facebook Page.</a>
+                                We also offer foodstuffs like seafood dishes, soups, salad & sandwiches and seafood pizza & steaks. This ideal tropical space is suited in J. Rosales Avenue - Butuan City Agusan del Norte.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <!--Map-->
-        <section class="map-section bg-info-subtle" id="map">
+        <!--Menu-->
+        <section class="menu-section text-center" id="menu">
             <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">                   
+                <div class="featured-text text-center">
+                    <h4> OUR MENU</h4>
+                    <!-- Carousel wrapper -->
+                    <div id="carouselMultiItemExample" class="carousel slide carousel-dark text-center" data-bs-ride="carousel" data-bs-interval="3000" data-bs-items="3"> <!--carouselMultiItemExample  data-mdb-items="3"   -->
+                        <!-- Controls -->
+                        <!-- Inner -->
+                        <div class="carousel-inner py-4">
+                            <!-- Single item -->
+                            <div class="carousel-item active">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="card">
+                                                <img src="assets/images/baked-scallops.jpg" class="card-img-top img-fluid d-block m-x-auto">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Baked-Scallops</h5>
+                                                        <p class="card-text">
+                                                            PHP 275
+                                                        </p>
+                                                        <a href="#!" class="btn btn-primary">Order Now!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 d-none d-lg-block">
+                                            <div class="card">
+                                                <img src="assets/images/lubster.jpg" class="card-img-top img-fluid d-block m-x-auto">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Lubster garlic chilli</h5>
+                                                    <p class="card-text">
+                                                        PHP 180
+                                                    </p>
+                                                    <a href="#!" class="btn btn-primary">Order Now!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 d-none d-lg-block">
+                                            <div class="card">
+                                                <img src="assets/images/octupos-suite.jpg" class="card-img-top img-fluid d-block m-x-auto">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Octupos-Suite</h5>
+                                                    <p class="card-text">
+                                                        PHP 200
+                                                    </p>
+                                                    <a href="#!" class="btn btn-primary">Order Now!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Single item -->
+                            <div class="carousel-item">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-12">
+                                            <div class="card">
+                                                <img src="assets/images/lumi.jpg" class="card-img-top img-fluid d-block m-x-auto">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Lumi</h5>
+                                                    <p class="card-text">
+                                                        PHP 220
+                                                    </p>
+                                                    <a href="#!" class="btn btn-primary">Order Now!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 d-none d-lg-block">
+                                            <div class="card">
+                                                <img src="assets/images/octupos-suite.jpg" class="card-img-top img-fluid d-block m-x-auto">
+                                                <div class="card-body">
+                                                    <h5 class="card-title">Octupos-suite</h5>
+                                                    <p class="card-text">
+                                                        PHP 200
+                                                    </p>
+                                                    <a href="#!" class="btn btn-primary">Order Now!</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 d-none d-lg-block">
+                                            <div class="card">
+                                                <img src="assets/images/sauted-abalone.jpg" class="card-img-top img-fluid d-block m-x-auto">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Suited-abalone</h5>
+                                                <p class="card-text">
+                                                    PHP 320
+                                                </p>
+                                                <a href="#!" class="btn btn-primary">Order Now!</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        </div>
+                        <!-- Inner -->
+                        <!--Control-->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMultiItemExample" data-bs-slide="prev"> <!-- tabindex="0" data-mdb-slide="prev" -->
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselMultiItemExample" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                    </div>
+                    <!-- Carousel wrapper -->
+                </div>
+            </div>
+        </section>
+        <!--End Menu-->
+        <!--Gallery-->
+        <section class="gallery-section text-center" id="gallery">
+            <div class="container px-4 px-lg-5">
+                <!-- Gallery -->
+                <div class="lightbox">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                            <img src="assets/images/bg-head.jpg" data-bs-img="assets/images/bg-head.jpg" class="w-100 shadow-1-strong rounded mb-4">
+
+                            <img src="assets/images/carousel1.jpg" data-bs-img="assets/images/carousel1.jpg" class="w-100 shadow-1-strong rounded mb-4">
+                        </div>
+
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <img src="assets/images/carousel2.jpg" data-bs-img="assets/images/carousel2.jpg" class="w-100 shadow-1-strong rounded mb-4">
+
+                            <img src="assets/images/contact.jpg" data-bs-img="assets/images/contact.jpg" class="w-100 shadow-1-strong rounded mb-4">
+                        </div>
+
+                        <div class="col-lg-4 mb-4 mb-lg-0">
+                            <img src="assets/images/menus.jpg" data-bs-img="assets/images/menus.jpg" class="w-100 shadow-1-strong rounded mb-4">
+
+                            <img src="assets/images/services.jpg" data-bs-img="assets/images/services.jpg" class="w-100 shadow-1-strong rounded mb-4">
+                        </div>
+                    </div>
+                </div>
+                <!-- Gallery -->
+            </div>
+        </section>
+        <!--End Gallery-->
+        <!--Map-->
+        <section class="map-section bg-info-subtle text-center" id="map">
+            
+            <div class="bg-info contact4 overflow-hidden position-relative">
+                <div class="row no-gutters">
+                    <div class="container">
+                        <div class="col-lg-6 contact-box mb-4 mb-md-0">
+                            <div class="">
+                                <h1 class="title font-weight-light text-white mt-3">Message Us</h1>
+                                <form class="mt-3">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="form-group mt-2">
+                                                <input class="form-control text-white" type="text" placeholder="Name">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group mt-2">
+                                                <input class="form-control text-white" type="text" placeholder="Phone Number">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group mt-2">
+                                                <input class="form-control text-white" type="email" placeholder="Email address">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="form-group mt-2">
+                                                <textarea class="form-control text-white" rows="3" placeholder="Message"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-12 d-flex align-items-center mt-2">
+                                            <button type="submit" class="btn bg-white text-inverse px-3 py-2 inline-block"><span> Submit</span></button>
+                                            <!--<span class="ml-auto text-white align-self-center"><i class="icon-phone mr-2"></i>251 546 9442</span>--> 
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 right-image p-r-0">
                         <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Ocean Bounties Seafood Restaurant&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://pdflist.com/" alt="pdf">Pdf</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:600px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:600px;}.gmap_iframe {width:600px!important;height:600px!important;}</style></div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Signup-->
-        <section class="signup-section" id="signup">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5">
-                    <div class="col-md-10 col-lg-8 mx-auto text-center">
-                        <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Send Us a Message!</h2>
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        
-                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <!--
-                            <div class="row input-group-newsletter">
-                                <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
-                                <div class="col"><input class="form-control" id="fullname" type="text" placeholder="Enter fullname..." aria-label="Enter fullname..." data-sb-validations="required,name" /></div>
-                                <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
-                            </div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
-                            <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div> -->
-                             <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required"/>
-                                <label for="name">Full Name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email Address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone Number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3 mt-2 text-white">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+            </div> 
+            <!--
+            <h3 class="mb-5">Contact us</h3>
+
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Ocean Bounties Seafood Restaurant&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://pdflist.com/" alt="pdf">Pdf</a></div><style>.mapouter{position:relative;text-align:right;width:600px;height:600px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:600px;}.gmap_iframe {width:600px!important;height:600px!important;}</style></div>
+                </div>
+
+                <div class="col-lg-7">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-9">
+                                <div class="row mb-4">
+                                    <div class="col-md-6 mb-4 mb-md-0">
+                                        <div class="form-outline">
+                                            <input type="text" id="form3Example1" class="form-control" />
+                                            <label class="form-label" for="form3Example1">First name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-outline">
+                                            <input type="email" id="form3Example2" class="form-control" />
+                                            <label class="form-label" for="form3Example2">Email Address</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                    <div class="form-outline mb-4">
+                                        <input type="text" id="form3Example3" class="form-control" />
+                                        <label class="form-label" for="form3Example3">Subject</label>
+                                    </div>
+                                    <div class="form-outline mb-4">
+                                        <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                                        <label class="form-label" for="form4Example3">Message</label>
+                                    </div>
+                                    <div class="text-center text-md-start">
+                                        <button type="submit" class="btn btn-primary mb-5 mb-md-0">
+                                            Send
+                                        </button>
+                                    </div>
+                                
+                                <div class="col-md-3">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <i class="fas fa-map-marker-alt fa-2x text-primary"></i>
+                                            <p><small>New York, NY 10012, USA</small></p>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-phone fa-2x text-primary"></i>
+                                            <p><small>+ 01 234 567 89</small></p>
+                                        </li>
+                                        <li>
+                                            <i class="fas fa-envelope fa-2x text-primary"></i>
+                                            <p><small>contact@gmail.com</small></p>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
-                            <div class="d-grid"><button class="btn btn-success btn-xl disabled" id="submitButton" type="submit">Submit</button></div>
-                        </form>
-                    </div>
+                        </div>
+                    </form>
+
                 </div>
-            </div>
+            </div> -->
         </section>
-        
+       
         <!-- Contact-->
         <section class="contact-section bg-pink">
             
