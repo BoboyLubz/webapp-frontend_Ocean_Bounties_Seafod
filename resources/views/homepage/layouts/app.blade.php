@@ -18,8 +18,78 @@
     <body id="page-top">
 
         @yield('content')
+        <!-- Remove the container if you want to extend the Footer to full width. -->
+        
 
-            <!-- Footer-->
+        
+<footer class="text-center text-whites" style="background-color: #f1f1f1;">
+<!-- Grid container -->
+<div class="container py-1 pt-4">
+  <!-- Section: Social media -->
+  <section class="mb-4">
+    <!-- Facebook -->
+    <a
+      class="btn btn-link btn-floating btn-lg text-dark m-1" style="background-color: #0d6efd" 
+      href="#!"
+      role="button"
+      data-mdb-ripple-color="dark"
+      ><i class="fab fa-facebook-f"></i
+    ></a>
+
+    <!-- Twitter -->
+    <a
+      class="btn btn-link btn-floating btn-lg text-dark m-1" style="background-color: #0d6efd"
+      href="#!"
+      role="button"
+      data-mdb-ripple-color="dark"
+      ><i class="fab fa-twitter"></i
+    ></a>
+
+    <!-- Google -->
+    <a
+      class="btn btn-link btn-floating btn-lg text-dark m-1" style="background-color: #0d6efd"
+      href="#!"
+      role="button"
+      data-mdb-ripple-color="dark"
+      ><i class="fab fa-google"></i
+    ></a>
+
+    <!-- Instagram -->
+    <a
+      class="btn btn-link btn-floating btn-lg text-dark m-1" style="background-color: #0d6efd"
+      href="#!"
+      role="button"
+      data-mdb-ripple-color="dark"
+      ><i class="fab fa-instagram"></i
+    ></a>
+
+    <!-- Linkedin -->
+    <a
+      class="btn btn-link btn-floating btn-lg text-dark m-1" style="background-color: #0d6efd"
+      href="#!"
+      role="button"
+      data-mdb-ripple-color="dark"
+      ><i class="fab fa-linkedin"></i
+    ></a>
+    <!-- Github -->
+    <a
+      class="btn btn-link btn-floating btn-lg text-dark m-1" style="background-color: #0d6efd"
+      href="#!"
+      role="button"
+      data-mdb-ripple-color="dark"
+      ><i class="fab fa-github"></i
+    ></a>
+    <div>
+      
+  </section>
+  <!-- Section: Social media -->
+</div>
+
+</footer>
+
+</div>
+<!-- End of .container -->
+            <!-- Footer
         
         <footer class="footer bg-black small text-center text-white-50">
             
@@ -29,7 +99,8 @@
                     <a class="mx-2" href="#!"><i class="fab fa-github"></i></a>
             </div>
             <div class="container px-4 px-lg-5">Copyright &copy; OceanBountiesSeafood_Market & Restaurant</div>
-        </footer>
+        </footer>-->
+        
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
@@ -41,3 +112,4 @@
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>
+        

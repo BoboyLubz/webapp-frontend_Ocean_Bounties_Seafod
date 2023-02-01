@@ -6,8 +6,9 @@
         @csrf
 
         <!-- Email Address -->
-        <div class="mt-4">
-            <img class="rounded-full" src="assets/images/logo.ico">
+        
+        <div class="mt-4 mx-20">
+            <img src="assets/images/logo.ico" class="bg-cover" style="background-image:">
         </div>
         <div>
             <x-input-label for="email" :value="__('Email')" />
