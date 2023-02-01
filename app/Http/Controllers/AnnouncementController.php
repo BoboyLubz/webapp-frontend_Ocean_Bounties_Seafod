@@ -40,7 +40,6 @@ class AnnouncementController extends Controller
         //Validation
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'price' => ['required', 'int'],
             'description' => ['required', 'string'],
             'image' => ['required', 'string'],
             
@@ -49,7 +48,6 @@ class AnnouncementController extends Controller
         //Storing after Validation
         Announcement::create([
             'name' => $request->name,
-            'price' => $request->price,
             'description' => $request->description,
             'image' => $request->image,
             
@@ -86,7 +84,6 @@ class AnnouncementController extends Controller
         //Validation
         $request->validate([
             'name' => ['required', 'string', 'max:255'],
-            'price' => ['required', 'int'],
             'description' => ['required', 'string'],
             'image' => ['required', 'string'],
 

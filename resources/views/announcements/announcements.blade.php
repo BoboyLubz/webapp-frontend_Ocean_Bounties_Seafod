@@ -38,8 +38,8 @@
                     <table class="table-fixed border-collapse border border-slate-400 w-full m-5">
                         <thead  divide-x>
                             <tr>
+                                <th class="border border-slate-300">USER-ID</th>
                                 <th class="border border-slate-300">NAME</th>
-                                <th class="border border-slate-300">PRICE</th>
                                 <th class="border border-slate-300">DISCRIPTION</th>
                                 <th class="border border-slate-300">IMAGE</th>
                                 <th class="border border-slate-300">ACTIONS</th>
@@ -50,8 +50,8 @@
                             @foreach ($announcements as $announcement)
                                 <!--<p>This is user {/{ $announcement->id }}</p> -->
                                 <tr>
+                                    <td class="text-center border border-slate-300">{{ $announcement->user_id }}</td>
                                     <td class="text-center border border-slate-300">{{ $announcement->name }}</td>
-                                    <td class="text-center border border-slate-300">{{ $announcement->price }}</td>
                                     <td class="text-center border border-slate-300">{{ $announcement->description }}</td>
                                     <td class="text-center border border-slate-300">{{ $announcement->image }}</td>
                                     <td class="text-center border border-slate-300">

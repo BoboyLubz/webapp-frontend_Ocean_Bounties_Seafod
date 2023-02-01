@@ -49,7 +49,7 @@
                                 <tr>
                                     <td class="text-center border border-slate-300">{{ $user->name }}</td>
                                     <td class="text-center border border-slate-300">{{ $user->email }}</td>
-                                    <td class="text-center border border-slate-300"></td>
+                                    <td class="text-center border border-slate-300">{{ $user->role }}</td>
                                     <td class="text-center border border-slate-300">
                                         <!--
                                         <a href="{/{ url('/users/update/' . $user->id) }}">

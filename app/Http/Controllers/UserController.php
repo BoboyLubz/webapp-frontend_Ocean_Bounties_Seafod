@@ -14,6 +14,16 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function adminHome()
+    {
+        return view('dashboard',["msg"=>"You Login as Admin!"]);
+    }
+
+    public function clerkHome()
+    {
+        return view('dashboard',["msg"=>"You Login as Clerk!"]);
+    }
+
     public function index()
     {
         

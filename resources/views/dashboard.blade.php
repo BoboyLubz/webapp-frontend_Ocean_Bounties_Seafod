@@ -11,8 +11,17 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <!--{/{ __("You're logged in!") }/}-->
 
-                    <h1>Welcome Thank you for logging in {{ Auth::user()->name }}</h1>
-
+                    <!--<h1>Welcome Thank you for logging in {/{ Auth::user()->name }}</h1>-->
+                    <div class="card-body">
+                        @if (session('status'))
+                            <div class="alert alert-success" role="alert">
+                                {{ session('status') }}
+                            </div>
+                        @endif
+                        {{ Auth::user()->name }}
+                        <br>
+                        {{$msg}}
+                    </div>
                 </div>
             </div>
         </div>
