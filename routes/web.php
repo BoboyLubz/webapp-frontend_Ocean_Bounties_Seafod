@@ -47,10 +47,14 @@ Route::delete('/users/delete/{id}', [UserController::class, 'destroy'])
 
 
 
-/** ANNOUNCEMENT**/        
+/** ANNOUNCEMENT**/
+        
 Route::get('/announcements', [AnnouncementController::class, 'index'])
         ->middleware(['auth', 'verified'])
         ->name('announcements');
+
+Route::get('list', [AnnouncementController::class, 'showData'])
+        ->middleware(['auth', 'verified']);
 
 Route::get('/announcements/add', [AnnouncementController::class, 'upload'])
         ->middleware(['auth', 'verified']);

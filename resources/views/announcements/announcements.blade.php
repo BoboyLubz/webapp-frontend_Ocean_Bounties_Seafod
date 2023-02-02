@@ -50,7 +50,7 @@
                             @foreach ($announcements as $announcement)
                                 <!--<p>This is user {/{ $announcement->id }}</p> -->
                                 <tr>
-                                    <td class="text-center border border-slate-300">{{ $announcement->user_id }}</td>
+                                    <td class="text-center border border-slate-300">{{ $announcement->user->user_id }}</td>
                                     <td class="text-center border border-slate-300">{{ $announcement->name }}</td>
                                     <td class="text-center border border-slate-300">{{ $announcement->description }}</td>
                                     <td class="text-center border border-slate-300">{{ $announcement->image }}</td>

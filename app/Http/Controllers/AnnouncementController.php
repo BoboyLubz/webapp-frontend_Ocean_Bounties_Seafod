@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Announcement;
+use Illuminate\Support\Facades\DB;
 class AnnouncementController extends Controller
 {
     /**
@@ -11,9 +12,16 @@ class AnnouncementController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function showData(){
+        return DB::table('announcements')
+        ->join('users', 'users.id', "=", 'announcements.user_id')
+        ->select('announcements.*')
+        ->get();
+    }
     public function index()
     {
         /*return view('home', compact('announcements'));*/
+
         return view('announcements.announcements', [
             'header' => 'Announcement List',
             'announcements'   =>  Announcement::all()

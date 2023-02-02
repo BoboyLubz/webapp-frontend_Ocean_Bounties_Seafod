@@ -7,9 +7,9 @@
 
         <!-- Email Address -->
         
-        <div class="mt-4 mx-20">
+       <!-- <div class="mt-4 mx-20">
             <img src="assets/images/logo.ico" class="bg-cover" style="background-image:">
-        </div>
+        </div>-->
         <div>
             <x-input-label for="email" :value="__('Email')" />
             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
